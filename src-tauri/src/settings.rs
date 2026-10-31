@@ -397,6 +397,10 @@ pub struct AppSettings {
     /// anything shorter is a tap that locks recording on.
     #[serde(default = "default_hold_threshold_ms")]
     pub hold_threshold_ms: u64,
+    /// Whether the cancel shortcut is armed while recording. Its default key
+    /// (Escape) is easy to hit by accident, which throws the recording away.
+    #[serde(default = "default_cancel_shortcut_enabled")]
+    pub cancel_shortcut_enabled: bool,
     #[serde(default)]
     pub audio_feedback: bool,
     #[serde(default = "default_audio_feedback_volume")]
@@ -584,6 +588,10 @@ fn default_autostart_enabled() -> bool {
 }
 
 fn default_update_checks_enabled() -> bool {
+    true
+}
+
+fn default_cancel_shortcut_enabled() -> bool {
     true
 }
 
@@ -992,6 +1000,7 @@ pub fn get_default_settings() -> AppSettings {
         bindings,
         shortcut_activation: ShortcutActivation::default(),
         hold_threshold_ms: default_hold_threshold_ms(),
+        cancel_shortcut_enabled: default_cancel_shortcut_enabled(),
         audio_feedback: false,
         audio_feedback_volume: default_audio_feedback_volume(),
         sound_theme: default_sound_theme(),

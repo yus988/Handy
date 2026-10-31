@@ -377,6 +377,10 @@
           "push_to_talk": "Kısayolu basılı tuttuğunuz sürece kaydeder",
           "toggle": "Kaydı başlatmak için kısayola dokunun, durdurmak için tekrar dokunun"
         }
+      },
+      "cancelShortcut": {
+        "label": "İptal kısayolu",
+        "description": "Geçerli kaydı silen bir kısayolu etkinleştirir. Sık sık yanlışlıkla basıyorsanız kapatın."
       }
     },
     "models": {

@@ -659,6 +659,7 @@ pub fn run(cli_args: CliArgs) {
             shortcut::reset_binding,
             shortcut::change_shortcut_activation_setting,
             shortcut::change_hold_threshold_ms_setting,
+            shortcut::change_cancel_shortcut_enabled_setting,
             shortcut::change_audio_feedback_setting,
             shortcut::change_audio_feedback_volume_setting,
             shortcut::change_recording_tone_setting,

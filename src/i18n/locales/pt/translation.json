@@ -377,6 +377,10 @@
           "push_to_talk": "Grava enquanto você mantém o atalho pressionado",
           "toggle": "Toque no atalho para começar a gravar, toque novamente para parar"
         }
+      },
+      "cancelShortcut": {
+        "label": "Atalho de cancelamento",
+        "description": "Ativa um atalho que descarta a gravação atual. Desative se você costuma pressioná-lo sem querer."
       }
     },
     "models": {

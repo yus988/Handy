@@ -377,6 +377,10 @@
           "push_to_talk": "Enregistreu mentre manteniu premuda la drecera",
           "toggle": "Premeu la drecera per iniciar l'enregistrament i torneu-la a prémer per aturar-lo"
         }
+      },
+      "cancelShortcut": {
+        "label": "Drecera de cancel·lació",
+        "description": "Activa una drecera que descarta l'enregistrament actual. Desactiva-la si la prems sovint per error."
       }
     },
     "models": {

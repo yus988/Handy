@@ -377,6 +377,10 @@
           "push_to_talk": "Nimmt auf, solange die Tastenkombination gedrückt bleibt",
           "toggle": "Tastenkombination antippen, um die Aufnahme zu starten, erneut antippen zum Stoppen"
         }
+      },
+      "cancelShortcut": {
+        "label": "Abbruch-Tastenkürzel",
+        "description": "Aktiviert ein Tastenkürzel, das die laufende Aufnahme verwirft. Schalte es aus, wenn du es oft versehentlich drückst."
       }
     },
     "models": {

@@ -377,6 +377,10 @@
           "push_to_talk": "Optager, mens du holder genvejen nede",
           "toggle": "Tryk på genvejen for at starte optagelsen, tryk igen for at stoppe"
         }
+      },
+      "cancelShortcut": {
+        "label": "Genvej til annullering",
+        "description": "Aktivér en genvej, der kasserer den aktuelle optagelse. Slå den fra, hvis du ofte kommer til at trykke på den."
       }
     },
     "models": {

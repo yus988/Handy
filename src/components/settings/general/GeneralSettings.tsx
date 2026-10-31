@@ -7,6 +7,7 @@ import { ShortcutInput } from "../ShortcutInput";
 import { SettingsGroup } from "../../ui/SettingsGroup";
 import { OutputDeviceSelector } from "../OutputDeviceSelector";
 import { ShortcutActivationSetting } from "../ShortcutActivation";
+import { CancelShortcutToggle } from "../CancelShortcutToggle";
 import { AudioFeedback } from "../AudioFeedback";
 import { useSettings } from "../../../hooks/useSettings";
 import { VolumeSlider } from "../VolumeSlider";
@@ -23,6 +24,7 @@ export const GeneralSettings: React.FC = () => {
   const { t } = useTranslation();
   const { audioFeedbackEnabled, getSetting } = useSettings();
   const isLinux = type() === "linux";
+  const cancelShortcutEnabled = getSetting("cancel_shortcut_enabled") ?? true;
   const recordingToneEnabled = getSetting("recording_tone") ?? false;
   // Only for Chinese speakers, or anyone who already picked a script.
   const speaksChinese =
@@ -34,7 +36,12 @@ export const GeneralSettings: React.FC = () => {
         <ShortcutInput shortcutId="transcribe" grouped={true} />
         <ShortcutActivationSetting descriptionMode="tooltip" grouped={true} />
         {/* Cancel shortcut remains hidden on Linux because of dynamic shortcut instability. */}
-        {!isLinux && <ShortcutInput shortcutId="cancel" grouped={true} />}
+        {!isLinux && (
+          <CancelShortcutToggle descriptionMode="tooltip" grouped={true} />
+        )}
+        {!isLinux && cancelShortcutEnabled && (
+          <ShortcutInput shortcutId="cancel" grouped={true} />
+        )}
       </SettingsGroup>
       <SettingsGroup title={t("settings.languages.title")}>
         <PreferredLanguages descriptionMode="tooltip" grouped={true} />

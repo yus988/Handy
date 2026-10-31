@@ -377,6 +377,10 @@
           "push_to_talk": "Merekam selama Anda menahan pintasan",
           "toggle": "Ketuk pintasan untuk mulai merekam, lalu ketuk lagi untuk berhenti"
         }
+      },
+      "cancelShortcut": {
+        "label": "Pintasan batal",
+        "description": "Aktifkan pintasan yang membuang rekaman saat ini. Matikan jika Anda sering menekannya tanpa sengaja."
       }
     },
     "models": {

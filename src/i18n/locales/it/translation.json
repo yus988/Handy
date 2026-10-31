@@ -377,6 +377,10 @@
           "push_to_talk": "Registra finché tieni premuta la scorciatoia",
           "toggle": "Tocca la scorciatoia per avviare la registrazione, tocca di nuovo per fermarla"
         }
+      },
+      "cancelShortcut": {
+        "label": "Scorciatoia di annullamento",
+        "description": "Attiva una scorciatoia che scarta la registrazione in corso. Disattivala se la premi spesso per sbaglio."
       }
     },
     "models": {

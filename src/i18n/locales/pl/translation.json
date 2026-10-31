@@ -377,6 +377,10 @@
           "push_to_talk": "Nagrywa, dopóki trzymasz skrót",
           "toggle": "Dotknij skrótu, aby rozpocząć nagrywanie, dotknij ponownie, aby zatrzymać"
         }
+      },
+      "cancelShortcut": {
+        "label": "Skrót anulowania",
+        "description": "Włącza skrót, który odrzuca bieżące nagranie. Wyłącz go, jeśli często naciskasz go przypadkiem."
       }
     },
     "models": {

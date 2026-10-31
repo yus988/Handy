@@ -377,6 +377,10 @@
           "push_to_talk": "Graba mientras mantienes pulsado el atajo",
           "toggle": "Toca el atajo para empezar a grabar, tócalo de nuevo para detener"
         }
+      },
+      "cancelShortcut": {
+        "label": "Atajo de cancelación",
+        "description": "Activa un atajo que descarta la grabación actual. Desactívalo si sueles pulsarlo por error."
       }
     },
     "models": {

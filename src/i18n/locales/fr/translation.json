@@ -377,6 +377,10 @@
           "push_to_talk": "Enregistre tant que le raccourci est maintenu",
           "toggle": "Appuyez sur le raccourci pour démarrer l'enregistrement, appuyez à nouveau pour arrêter"
         }
+      },
+      "cancelShortcut": {
+        "label": "Raccourci d'annulation",
+        "description": "Active un raccourci qui abandonne l'enregistrement en cours. Désactivez-le si vous l'appuyez souvent par erreur."
       }
     },
     "models": {

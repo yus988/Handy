@@ -377,6 +377,10 @@
           "push_to_talk": "Nahrává, dokud držíte zkratku",
           "toggle": "Klepněte na zkratku pro zahájení nahrávání, klepněte znovu pro zastavení"
         }
+      },
+      "cancelShortcut": {
+        "label": "Zkratka pro zrušení",
+        "description": "Zapne zkratku, která zahodí aktuální nahrávku. Vypněte ji, pokud ji často stisknete omylem."
       }
     },
     "models": {

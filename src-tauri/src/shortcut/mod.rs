@@ -67,6 +67,12 @@ static CANCEL_REGISTERED: std::sync::Mutex<bool> = std::sync::Mutex::new(false);
 
 /// Register the cancel shortcut (called when recording starts)
 pub fn register_cancel_shortcut(app: &AppHandle) {
+    // Turned off in settings: leave the key alone. Stop still unregisters, so
+    // turning it off mid-recording releases the key when that recording ends.
+    if !get_settings(app).cancel_shortcut_enabled {
+        return;
+    }
+
     // Track recording lifecycle independently of the current implementation so
     // switching implementations mid-recording cannot leave stale fallback state.
     crate::secure_input::register_cancel_fallback(app);
@@ -591,6 +597,15 @@ pub fn change_shortcut_activation_setting(
 pub fn change_hold_threshold_ms_setting(app: AppHandle, ms: u64) -> Result<(), String> {
     let mut settings = settings::get_settings(&app);
     settings.hold_threshold_ms = ms;
+    settings::write_settings(&app, settings);
+    Ok(())
+}
+
+#[tauri::command]
+#[specta::specta]
+pub fn change_cancel_shortcut_enabled_setting(app: AppHandle, enabled: bool) -> Result<(), String> {
+    let mut settings = settings::get_settings(&app);
+    settings.cancel_shortcut_enabled = enabled;
     settings::write_settings(&app, settings);
     Ok(())
 }

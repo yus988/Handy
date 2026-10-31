@@ -377,6 +377,10 @@
           "push_to_talk": "Ghi âm trong lúc bạn giữ phím tắt",
           "toggle": "Nhấn phím tắt để bắt đầu ghi âm, nhấn lại để dừng"
         }
+      },
+      "cancelShortcut": {
+        "label": "Phím tắt hủy",
+        "description": "Bật phím tắt bỏ bản ghi hiện tại. Hãy tắt nếu bạn hay vô tình nhấn phải."
       }
     },
     "models": {

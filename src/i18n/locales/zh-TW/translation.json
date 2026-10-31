@@ -377,6 +377,10 @@
           "push_to_talk": "按住快捷鍵期間錄音",
           "toggle": "輕按快捷鍵開始錄音，再次輕按停止"
         }
+      },
+      "cancelShortcut": {
+        "label": "取消快速鍵",
+        "description": "啟用可捨棄目前錄音的快速鍵。如果經常誤按，請關閉。"
       }
     },
     "models": {

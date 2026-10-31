@@ -377,6 +377,10 @@
           "push_to_talk": "Records while you hold the shortcut",
           "toggle": "Tap the shortcut to start recording, tap again to stop"
         }
+      },
+      "cancelShortcut": {
+        "label": "Cancel Shortcut",
+        "description": "Arm a shortcut that discards the current recording. Turn it off if you tend to press it by accident."
       }
     },
     "models": {

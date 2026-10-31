@@ -377,6 +377,10 @@
           "push_to_talk": "按住快捷键期间录音",
           "toggle": "轻按快捷键开始录音，再次轻按停止"
         }
+      },
+      "cancelShortcut": {
+        "label": "取消快捷键",
+        "description": "启用可丢弃当前录音的快捷键。如果经常误按，请关闭。"
       }
     },
     "models": {

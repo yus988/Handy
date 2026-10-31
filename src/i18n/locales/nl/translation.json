@@ -377,6 +377,10 @@
           "push_to_talk": "Neemt op zolang je de sneltoets ingedrukt houdt",
           "toggle": "Tik op de sneltoets om de opname te starten, tik opnieuw om te stoppen"
         }
+      },
+      "cancelShortcut": {
+        "label": "Sneltoets annuleren",
+        "description": "Schakelt een sneltoets in die de huidige opname weggooit. Zet hem uit als je hem vaak per ongeluk indrukt."
       }
     },
     "models": {
